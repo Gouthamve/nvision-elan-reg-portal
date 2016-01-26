@@ -11,7 +11,9 @@ var users = require('./routes/users');
 
 var app = express();
 
-mongoose.connect('localhost/elanvision');
+let mongoURL = process.env.mongoURL || 'localhost/elanvision';
+
+mongoose.connect(mongoURL);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
