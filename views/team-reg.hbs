@@ -1,0 +1,17 @@
+<div class="container">
+	<h2>Individual Registration</h2>
+	<form role="form" method="post" action="/teamreg2">
+		<input name="count" type="number" hidden value="{{count}}" />
+		{{#each idx}}
+			<div class="form-group">
+			  <label for="id{{this}}">Enter IITH-ID of person {{this}} : </label>
+			  <input type="text" class="form-control" name="id{{this}}" placeholder="Enter IITH-ID {{this}}">
+			</div>
+		{{/each}}
+		<div class="form-group">
+		  <label for="event">Event Name : </label>
+		  <input type="text" class="form-control" name="event" placeholder="Enter event name">
+		</div>
+		<button type="submit" class="btn btn-default" name="submit">Submit</button>
+	</form>
+</div>
