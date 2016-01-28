@@ -8,7 +8,9 @@ let teamSchema = schema({
   id2: String,
   id3: String,
   id4: String,
-  id5: String,  
+  id5: String,
+  id6: String,
+  id7: String,
   teamId: String,
   event: String
 });
